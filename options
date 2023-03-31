@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset> <!---pra criar como se fosse uma caxinha-->
+            <legend>Basic Inputs</legend>
+        <!-- Text Input -->
+            <!--<label for="name">Name:</label>-->
+            <input type="text" id="name" name="name" value="" placeholder="Digite o nome do usuário"><br><br>
+      
+        <!-- Email Input -->
+            <label for="email">Email:</label> <!--"digite sua idade" como se fosse um print -->
+            <input type="email" id="email" name="email"><br><br>
+      
+        <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+        </fieldset>
+      
+        <fieldset>
+            <legend>Time Inputs</legend>
+            <!-- Date Input -->
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+        
+            <!-- Time Input -->
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time"><br>
+            
+        </fieldset>
+        
+        <fieldset>
+            <legend>Special Inputs:</legend>
+            <!-- Number Input -->
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="5" max="10"><br><br>
+        
+            <!-- Range Input -->
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="1" max="3"><br><br>
+        
+            <!-- Color Input -->
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color"><br>
+        </fieldset>
+      
+        <fieldset>
+            <legend>Checkbox and Radios:</legend>
+            <!-- Checkbox Input -->
+            <label for="checkbox">Credit Card:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" value="creditcard" checked><br>
+            <label for="checkbox">Pay Pal:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" value="paypal"><br><br>
+
+            <!-- Radio Button Input -->
+            <label for="radio">Genre:</label><br>
+            <input type="radio" id="radio1" name="radio" value="radio1">
+            <label for="radio1">Male</label><br>
+            <input type="radio" id="radio2" name="radio" value="radio2">
+            <label for="radio2">Female</label><br>
+        </fieldset>
+      
+        <fieldset>
+            <!-- Textarea -->
+            <label for="textarea">Obs:</label><br>
+            <textarea id="textarea" name="textarea" rows="2" cols="10"></textarea><br>
+        </fieldset>
+      
+        <fieldset>
+            <!-- Select Dropdown -->
+            <label for="select">States:</label>
+            <select id="select" name="select">
+                <option value="option1">São Paulo</option>
+                <option value="option2">Rio de Janeiro</option>
+                <option value="option3">Minas Gerais</option>
+                <option value="option4">Espiríto Santo</option>
+            </select><br><br>
+        
+      
+            <!-- Select Dropdown with Option Groups -->
+            <label for="select-grouped">Select Grouped:</label>
+            <select id="select-grouped" name="select-grouped">
+            <optgroup label="Group 1">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </optgroup><br>
+            <optgroup label="Group 2">
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+            </optgroup>
+            </select><br><br>
+      
+            <!-- Datalist -->
+            <label for="datalist">Produtos:</label>
+            <input list="datalist" name="datalist">
+            <datalist id="datalist">
+                <option value="option1">
+                <option value="option2">
+                <option value="option3">
+                <option value="option4">
+            </datalist><br>
+        </fieldset>
+        
+        <fieldset>
+            <!-- Output -->
+            <label for="output">Resultado do Cálculo:</label>
+            <h1>O resultado da soma é <output id="output" name="output"></output></h1><br>
+        </fieldset>
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+        </form>
+      
+</body>
+</html>
